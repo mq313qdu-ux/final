@@ -1616,7 +1616,7 @@
         correct: 3, // الاختيار d
         explanation: "هنا لازم ننتبه، بما إنه الجرعة (Gy) هي (جول/كيلوغرام)، فإذا اعتبرنا الكتلة لنسيج صغير جداً (مثل الغرام)، راح تطلع الطاقة الممتصة هي $0.05 \times 10^{-3}$ جول."
     }
-     
+         
                 ]
            
             },
@@ -1625,7 +1625,7 @@
                 title: "اسئلة الفاينل",
                 icon: "⭐",
                 questions: [
-    {
+     {
         question: "Which type of dosimeter provides immediate radiation readings?",
         translation: "أي نوع من أجهزة قياس الجرعات يوفر قراءات إشعاعية فورية؟",
         options: ["Radio photoluminescence", "Film badges", "Direct Ion Storage (DIS)", "Pocket Dosimeters"],
@@ -2117,6 +2117,604 @@
         options: ["Calcium sulfate and potassium iodide", "Barium chloride and sodium iodide", "Iodine-based and barium sulfate", "Magnesium oxide and iodine chloride"],
         correct: 2,
         explanation: "اليود والباريوم هم أكثر مادتين ملونة نستخدمهم بالفحوصات."
+    }
+                ]
+           
+            },
+            {
+                id: 3,
+                title: "اسئلة الدكتورة",
+                icon: "🏆",
+                questions: [
+    {
+        question: "What is the primary purpose of radiation detectors?",
+        translation: "ما هو الغرض الأساسي من كواشف الإشعاع؟",
+        options: ["To measure atmospheric pressure", "To specify radiation types and energy levels", "To generate nuclear power", "To create radioactive materials"],
+        correct: 1,
+        explanation: "أستاذ قدو (**Muqtada Al-Kinani**)، الغرض الأساسي هو تحديد نوع وطاقة الإشعاع اللي دا نتعامل وياه."
+    },
+    {
+        question: "Which factor is NOT considered when selecting a radiation detector?",
+        translation: "أي عامل لا يؤخذ في الاعتبار عند اختيار كاشف الإشعاع؟",
+        options: ["The weight of the detector", "The type of radiation being detected", "The energy of radiation", "The intensity of radiation"],
+        correct: 0,
+        explanation: "وزن الكاشف ما يأثر على دقة الحسابات الفيزيائية، فما نعتبره عامل أساسي بالاختيار."
+    },
+    {
+        question: "What types of radiation can these specialized devices detect?",
+        translation: "ما هي أنواع الإشعاع التي يمكن لهذه الأجهزة المتخصصة اكتشافها؟",
+        options: ["Only gamma rays", "Only heavy charged particles", "Only x-rays and electrons", "All types including heavy charged particles, electrons, x-rays, and gamma rays"],
+        correct: 3,
+        explanation: "هاي الأجهزة مصممة حتى تتحسس كل أنواع الإشعاعات المؤينة سواء كانت جسيمات ثقيلة أو موجات."
+    },
+    {
+        question: "What is the primary principle that many radiation detectors rely on for detection?",
+        translation: "ما هو المبدأ الأساسي الذي تعتمد عليه العديد من كواشف الإشعاع للكشف؟",
+        options: ["Chemical bonding", "Ionization phenomena", "Nuclear fusion", "Electromagnetic interference"],
+        correct: 1,
+        explanation: "أغلب الكواشف تعتمد على ظاهرة 'التأين' اللي يسويها الإشعاع من يمر بالوسط."
+    },
+    {
+        question: "Which of the following is NOT a common medium used for radiation detection?",
+        translation: "أي مما يلي ليس وسطًا شائعًا يستخدم للكشف عن الإشعاع؟",
+        options: ["Photographic emulsions", "Magnetic resonance", "Gases", "Scintillators"],
+        correct: 1,
+        explanation: "الرنين المغناطيسي (MRI) هو وسيلة تصوير مو وسط لكشف الإشعاع."
+    },
+    {
+        question: "What type of detector would you most likely find using NaI(Tl)?",
+        translation: "ما هو نوع الكاشف الذي من المرجح أن تجده يستخدم يوديد الصوديوم المنشط بالثاليوم NaI(Tl)؟",
+        options: ["Ion chamber", "Proportional counter", "Scintillator", "Film badge"],
+        correct: 2,
+        explanation: "مادة NaI(Tl) هي أشهر مادة وميضية تستخدم بكواشف الوميض (Scintillators)."
+    },
+    {
+        question: "Which of these is classified as a solid state detector?",
+        translation: "أي من هذه يصنف ككاشف حالة صلبة؟",
+        options: ["GM counter", "Anthracene", "Thermoluminescent dosimeter", "Ion chamber"],
+        correct: 2,
+        explanation: "الـ TLD يعتبر كاشف حالة صلبة لأنه يعتمد على الكريستالات."
+    },
+    {
+        question: "What is the primary principle behind how gas-filled radiation detectors work?",
+        translation: "ما هو المبدأ الأساسي وراء كيفية عمل كواشف الإشعاع المملوءة بالغاز؟",
+        options: ["Through chemical reactions in the gas", "Through ionization of gas molecules", "Through heat generation in the chamber", "Through pressure changes in the container"],
+        correct: 1,
+        explanation: "فكرتها إن الإشعاع يأين جزيئات الغاز داخل الغرفة وهاي الأيونات تتحول لإشارة."
+    },
+    
+    {
+        question: "In a gas-filled detector, what happens to the positive ions created during ionization?",
+        translation: "في الكاشف المملوء بالغاز، ماذا يحدث للأيونات الموجبة الناتجة أثناء التأين؟",
+        options: ["They remain stationary in the chamber", "They move toward the central electrode (anode)", "They move toward the outer electrode (cathode)", "They disappear immediately"],
+        correct: 2,
+        explanation: "الأيون الموجب ينجذب دائماً للقطب السالب (الكاثود)."
+    },
+    {
+        question: "Which component is responsible for collecting the negative ions in the detector?",
+        translation: "أي مكون مسؤول عن جمع الأيونات السالبة في الكاشف؟",
+        options: ["The anode (positive electrode)", "The insulator", "The current meter", "The outer sheath (the cathode)"],
+        correct: 0,
+        explanation: "الأنود هو القطب الموجب، فيجذب الأيونات السالبة (الإلكترونات) ويجمعها."
+    },
+    {
+        question: "What determines the strength of the signal displayed by the instrument?",
+        translation: "ما الذي يحدد قوة الإشارة التي يعرضها الجهاز؟",
+        options: ["The size of the detector chamber", "The voltage of the power supply", "The type of gas used", "The amount of radiation entering the chamber"],
+        correct: 3,
+        explanation: "كلما زاد الإشعاع الداخل للغرفة، زاد التأين وبالتالي قوت الإشارة بالجهاز."
+    },
+    {
+        question: "Which of the following is NOT one of the three basic types of gas-filled radiation detectors?",
+        translation: "أي مما يلي ليس أحد الأنواع الثلاثة الأساسية لكواشف الإشعاع المملوءة بالغاز؟",
+        options: ["Ionization chambers", "Plasma detectors", "Proportional counters", "Geiger-Mueller counters"],
+        correct: 1,
+        explanation: "كواشف البلازما مو من ضمن التقسيمات الثلاثة الأساسية المعروفة."
+    },
+    {
+        question: "What happens to the positive ions in a gas-filled detector when voltage is applied?",
+        translation: "ماذا يحدث للأيونات الموجبة في الكاشف المملوء بالغاز عند تطبيق الجهد؟",
+        options: ["They remain stationary", "They move to the anode", "They move to the cathode", "They disappear completely"],
+        correct: 2,
+        explanation: "بسبب الجهد الكهربائي، الأيونات الموجبة تنجذب للقطب السالب (الكاثود)."
+    },
+    {
+        question: "Which component of the detector serves as the outer sheath and acts as the cathode?",
+        translation: "أي مكون من مكونات الكاشف يعمل كغلاف خارجي ويعمل ككاثود؟",
+        options: ["The central electrode", "The power supply", "The insulator", "The outer electrode"],
+        correct: 3,
+        explanation: "القطب الخارجي (الجدار) هو اللي يمثل الكاثود في أغلب التصاميم."
+    },
+    {
+        question: "What is measured across the cathode and anode in a gas-filled detector to detect radiation?",
+        translation: "ما الذي يتم قياسه عبر الكاثود والأنود في كاشف مملوء بالغاز للكشف عن الإشعاع؟",
+        options: ["Temperature", "Magnetic field", "Electrical current", "Pressure"],
+        correct: 2,
+        explanation: "نقيس التيار الكهربائي الناتج عن حركة الأيونات المتولدة."
+    },
+    {
+        question: "How many basic types of gas-filled radiation detectors exist?",
+        translation: "كم عدد الأنواع الأساسية لكواشف الإشعاع المملوءة بالغاز؟",
+        options: ["Two", "Four", "Three", "Five"],
+        correct: 2,
+        explanation: "همة تلاثة: غرفة التأين، العداد التناسبي، وعداد جيجر."
+    },
+    {
+        question: "What is the primary gas used in ionization chambers for radiation monitoring?",
+        translation: "ما هو الغاز الأساسي المستخدم في غرف التأين لمراقبة الإشعاع؟",
+        options: ["Helium", "Air", "Nitrogen", "Argon"],
+        correct: 1,
+        explanation: "الهواء هو الغاز الشائع والأساسي بهاي الغرف."
+    },
+    {
+        question: "Which type of radiation can ionization chambers detect?",
+        translation: "أي نوع من الإشعاع يمكن لغرف التأين اكتشافه؟",
+        options: ["Only alpha and beta particles", "Only gamma rays and x-rays", "Only neutrons", "All of the above (alpha, beta, gamma, x-rays, and neutrons)"],
+        correct: 3,
+        explanation: "تكدر تكشف كل هذن الأنواع، فهي شاملة بالاستخدام."
+    },
+    {
+        question: "What voltage type is used to energize an ionization chamber?",
+        translation: "ما هو نوع الجهد المستخدم لتنشيط غرفة التأين؟",
+        options: ["Alternating Current (AC)", "High Direct Current (DC)", "Low Direct Current (DC)", "Pulsating Current"],
+        correct: 2,
+        explanation: "نستخدم تيار مستمر (DC) بجهد واطئ حتى نجمع الأيونات بدون ما نسوي مضاعفة."
+    },
+    {
+        question: "At what pressure is the gas typically maintained in ionization chambers?",
+        translation: "عند أي ضغط يتم الحفاظ على الغاز عادةً في غرف التأين؟",
+        options: ["Atmospheric pressure", "High pressure", "Low pressure", "Vacuum"],
+        correct: 0,
+        explanation: "عادةً تشتغل بضغط مساوي للضغط الجوي الطبيعي."
+    },
+    {
+        question: "What are the two main applications of ionization chambers?",
+        translation: "ما هما التطبيقان الرئيسيان لغرف التأين؟",
+        options: ["Measuring temperature and pressure", "Measuring radioactivity and radiation exposure", "Measuring voltage and current", "Measuring density and volume"],
+        correct: 1,
+        explanation: "تستخدم بشكل أساسي لقياس كمية النشاط الإشعاعي والتعرض (الجرعة)."
+    },
+    {
+        question: "What is the primary characteristic of a proportional counter that distinguishes it from other radiation detectors?",
+        translation: "ما هي السمة الأساسية للعداد التناسبي التي تميزه عن كواشف الإشعاع الأخرى؟",
+        options: ["The production of visible light", "The multiplication of initial electrons through gas collisions", "The direct measurement of gamma rays only", "The use of solid-state materials"],
+        correct: 1,
+        explanation: "ميزته يسوي 'مضاعفة غازية' للإلكترونات حتى يكبر الإشارة."
+    },
+    {
+        question: "The main advantage of proportional counters in radiation detection is:",
+        translation: "الميزة الرئيسية للعدادات التناسبية في الكشف عن الإشعاع هي:",
+        options: ["Their ability to identify different types of radiation", "Their small physical size", "Their low power consumption", "Their resistance to temperature changes"],
+        correct: 0,
+        explanation: "قدرتها على تمييز نوع الإشعاع هي اللي تخليها مفيدة جداً."
+    },
+    {
+        question: "The process of electron multiplication in a proportional counter occurs due to:",
+        translation: "تحدث عملية مضاعفة الإلكترونات في العداد التناسبي بسبب:",
+        options: ["Chemical reactions in the gas", "Photoelectric effect", "Nuclear fusion", "Repeated collisions with gas molecules"],
+        correct: 3,
+        explanation: "الإلكترونات السريعة تضرب جزيئات الغاز وتطلع منها إلكترونات ثانوية وهكذا تتضاعف."
+    },
+    {
+        question: "What is the primary characteristic that makes GM detectors unable to distinguish between different types of radiation?",
+        translation: "ما هي السمة الأساسية التي تجعل كواشف GM غير قادرة على التمييز بين أنواع الإشعاع المختلفة؟",
+        options: ["Their large size output signal", "The pulse size is independent of ionization energy", "Their wide variety of shapes", "Their environmental insensitivity"],
+        correct: 1,
+        explanation: "أستاذ قدو، بجيجر كل النبضات تطلع نفس الحجم مهما كان نوع الإشعاع، فما يكدر يميز بينهم."
+    },
+    {
+        question: "Which types of radiation can Geiger-Müller counters detect?",
+        translation: "ما هي أنواع الإشعاع التي يمكن لعدادات جيجر-مولر اكتشافها؟",
+        options: ["Only alpha particles", "Only electromagnetic radiation", "Only beta particles", "Both charged particles and electromagnetic radiation"],
+        correct: 3,
+        explanation: "يكشف الجسيمات المشحونة والموجات الكهرومغناطيسية سوية."
+    },
+    {
+        question: "What is one of the main advantages of GM detectors?",
+        translation: "ما هي إحدى المزايا الرئيسية لكواشف GM؟",
+        options: ["Their ability to measure radiation energy", "Their high efficiency", "Their complex calibration process", "Their limited shape options"],
+        correct: 1,
+        explanation: "كفاءتها عالية جداً بكشف حتى الكميات القليلة من الإشعاع."
+    },
+    {
+        question: "What is the primary principle behind how a scintillation detector measures radiation?",
+        translation: "ما هو المبدأ الأساسي وراء كيفية قياس كاشف الوميض للإشعاع؟",
+        options: ["By measuring electrical resistance changes", "Through detecting light flashes produced by radiation in certain materials", "By counting radioactive particles directly", "Through measuring temperature changes"],
+        correct: 1,
+        explanation: "يعتمد على كشف ومضات الضوء اللي تصير ببعض المواد من يضربها الإشعاع."
+    },
+    
+    {
+        question: "Which component of a scintillation detector is responsible for converting light pulses into electrical current?",
+        translation: "أي مكون من مكونات كاشف الوميض مسؤول عن تحويل نبضات الضوء إلى تيار كهربائي؟",
+        options: ["The scintillator phosphor", "The radiation source", "The photomultiplier tube (PMT)", "The fluorescent compound"],
+        correct: 2,
+        explanation: "أنبوب المضاعف الضوئي (PMT) هو اللي يحول الضوء لتيار كهربائي."
+    },
+    {
+        question: "What is true about the relationship between light photons and energy in scintillation detection?",
+        translation: "ما هو الصحيح بشأن العلاقة بين فوتونات الضوء والطاقة في الكشف الوميضي؟",
+        options: ["Light photons decrease as energy increases", "There is no relationship between them", "The relationship varies randomly", "The number of light photons is proportional to the energy lost"],
+        correct: 3,
+        explanation: "كلما فقد الإشعاع طاقة أكبر بالمادة، زاد عدد فوتونات الضوء اللي تطلع."
+    },
+    {
+        question: "Which type of scintillator is specifically used for detecting gamma radiation?",
+        translation: "أي نوع من الوميضيات يستخدم خصيصاً للكشف عن إشعاع جاما؟",
+        options: ["Zinc Sulfide (ZnS)", "Plastic scintillator", "Organic molecules", "Sodium Iodide (NaI)"],
+        correct: 3,
+        explanation: "يوديد الصوديوم (NaI) هو أحسن مادة وميضية لكشف جاما."
+    },
+    {
+        question: "What are the two main types of scintillation detectors?",
+        translation: "ما هما النوعان الرئيسيان لكواشف الوميض؟",
+        options: ["Liquid crystals and metal compounds", "Solid crystals inorganic and organic molecules (plastics/liquids)", "Metal oxides and semiconductors", "Gas-filled tubes and crystal lattices"],
+        correct: 1,
+        explanation: "تنقسم لنوعين: بلورات صلبة غير عضوية، وجزيئات عضوية (مثل البلاستيك والسوائل)."
+    },
+    {
+        question: "What is the frequency of X-rays?",
+        translation: "ما هو تردد الأشعة السينية؟",
+        options: ["10¹⁶ Hz", "10¹⁸ Hz", "10⁻¹⁰ Hz", "10²⁰ Hz"],
+        correct: 1,
+        explanation: "ترددها عالي جداً ويوصل لـ 10 أس 18 هرتز."
+    },
+    {
+        question: "Which characteristic is NOT a property of X-rays?",
+        translation: "أي خاصية مما يلي ليست من خصائص الأشعة السينية؟",
+        options: ["They can pass through most materials", "They are invisible to the human eye", "They travel in curved paths", "They have high energy"],
+        correct: 2,
+        explanation: "الأشعة السينية تمشي بخطوط مستقيمة، مو بمسارات منحنية."
+    },
+    {
+        question: "Why are X-rays considered dangerous?",
+        translation: "لماذا تعتبر الأشعة السينية خطيرة؟",
+        options: ["They have low frequency", "They are visible to the eye", "They have high frequency and very short wavelength", "They only affect non-living organisms"],
+        correct: 2,
+        explanation: "بسبب ترددها العالي وقصر طولها الموجي، تكدر تأين الخلايا وتدمر الـ DNA."
+    },
+    {
+        question: "What is radiation shielding primarily used for?",
+        translation: "ما هو الغرض الأساسي من استخدام التدريع الإشعاعي؟",
+        options: ["To make X-rays more powerful", "To increase radiation exposure", "To improve image quality", "To protect against harmful ionizing radiation"],
+        correct: 3,
+        explanation: "نستخدم الدروع حتى نحمي نفسنا والمحيط من أضرار الإشعاع المؤين."
+    },
+    {
+        question: "Which statement about X-ray exposure is correct?",
+        translation: "أي عبارة عن التعرض للأشعة السينية صحيحة؟",
+        options: ["All exposure is equally harmful", "Long exposure is safe for living organisms", "Short exposure is generally not harmful", "Exposure time doesn't matter"],
+        correct: 2,
+        explanation: "التعرض لفترات قصيرة جداً (مثل الفحص الطبي) عادةً ما يكون بي خطر جبير."
+    },
+    {
+        question: "What is the wavelength of X-rays?",
+        translation: "ما هو الطول الموجي للأشعة السينية؟",
+        options: ["10⁻¹⁰ meters", "10⁻⁹ meters", "10⁻⁸ meters", "10⁻¹¹ meters"],
+        correct: 0,
+        explanation: "طولها الموجي قصير جداً بحدود 10 أس سالب 10 متر."
+    },
+    {
+        question: "What is considered the most hazardous and intense type of radiation in X-ray exposure?",
+        translation: "ما هو نوع الإشعاع الأكثر خطورة وشدة في التعرض للأشعة السينية؟",
+        options: ["Secondary radiation", "Primary radiation (useful beam)", "Scatter radiation", "Leakage radiation"],
+        correct: 1,
+        explanation: "الحزمة الأساسية (Useful beam) هي الأقوى والأخطر لأنها مركزة ومباشرة."
+    },
+    {
+        question: "Which of the following is NOT a type of secondary radiation?",
+        translation: "أي مما يلي ليس نوعاً من الإشعاع الثانوي؟",
+        options: ["Primary beam radiation", "Scatter radiation", "Leakage radiation", "Both scatter and leakage radiation"],
+        correct: 0,
+        explanation: "الحزمة الأولية هي 'أولية' مو ثانوية."
+    },
+    {
+        question: "When dealing with primary radiation (direct beam), what is the key safety principle?",
+        translation: "عند التعامل مع الإشعاع الأولي (الحزمة المباشرة)، ما هو مبدأ السلامة الرئيسي؟",
+        options: ["Expose all medical staff to the beam", "Use minimal protective barriers", "Only expose the patient to the direct beam", "Increase the beam intensity"],
+        correct: 2,
+        explanation: "لازم محد يتعرض للحزمة المباشرة إلا المريض وبالمنطقة المطلوبة بس."
+    },
+    {
+        question: "Secondary radiation consists of which two types?",
+        translation: "يتكون الإشعاع الثانوي من أي نوعين؟",
+        options: ["Direct and indirect radiation", "Primary and scatter radiation", "Scatter and leakage radiation", "Useful and non-useful radiation"],
+        correct: 2,
+        explanation: "الثانوي هو عبارة عن المشتت (Scatter) والمتسرب (Leakage) سوية."
+    },
+    {
+        question: "What is scattered radiation?",
+        translation: "ما هو الإشعاع المشتت؟",
+        options: ["Radiation that only travels in one direction", "Radiation that reflects off matter and air in all directions", "Radiation that comes directly from the X-ray tube", "Radiation that only affects the X-ray machine"],
+        correct: 1,
+        explanation: "هو الإشعاع اللي يضرب المادة (مثل المريض) ويتطشر بكل الاتجاهات."
+    },
+    {
+        question: "How can medical staff best protect themselves from scattered radiation?",
+        translation: "كيف يمكن للطاقم الطبي حماية أنفسهم بشكل أفضل من الإشعاع المشتت؟",
+        options: ["Stand closer to the patient during procedures", "Use plastic protective gear", "They should be as far away from the patient", "Turn off all radiation equipment"],
+        correct: 2,
+        explanation: "الابتعاد عن المريض هو أحسن وسيلة لأن المسافة تقلل شدة الإشعاع المشتت."
+    },
+    {
+        question: "What is leakage radiation?",
+        translation: "ما هو الإشعاع المتسرب؟",
+        options: ["Radiation that escapes through cracks in the walls", "Radiation that comes from the patient", "Radiation from equipment malfunctions", "Radiation emitted from the X-ray tube housing in directions other than the useful beam"],
+        correct: 3,
+        explanation: "هو الإشعاع اللي يطلع من غلاف التيوب بغير اتجاه الحزمة المفيدة."
+    },
+    {
+        question: "Which protective equipment should staff use to protect against scatter radiation?",
+        translation: "ما هي معدات الحماية التي يجب على الموظفين استخدامها للحماية من الإشعاع المشتت؟",
+        options: ["Cotton aprons", "Lead-rubber aprons and glass screens", "Regular glass windows", "Plastic shields"],
+        correct: 1,
+        explanation: "الصدريات الرصاصية والحواجز الزجاجية هي الأساس للوقاية."
+    },
+    {
+        question: "How much lead thickness is typically recommended for primary protective barriers?",
+        translation: "ما هو سمك الرصاص الموصى به عادةً للحواجز الوقائية الأولية؟",
+        options: ["1 mm", "2 mm", "3 mm", "4 mm"],
+        correct: 1,
+        explanation: "للحواجز الأساسية، نستخدم عادةً سمك بحدود 1.6 إلى 2 ملم رصاص."
+    },
+    {
+        question: "What is the equivalent thickness of concrete compared to lead in radiation protection?",
+        translation: "ما هو السمك المكافئ للخرسانة مقارنة بالرصاص في الوقاية من الإشعاع؟",
+        options: ["1 cm of concrete equals 0.4 mm of lead", "2 cm of concrete equals 0.4 mm of lead", "3 cm of concrete equals 0.4 mm of lead", "4 cm of concrete equals 0.4 mm of lead"],
+        correct: 2,
+        explanation: "كل 3 سم كونكريت تنطي حماية تعادل 0.4 ملم من الرصاص."
+    },
+    {
+        question: "What is the minimum recommended thickness for concrete blocks used as radiation barriers?",
+        translation: "ما هو الحد الأدنى للسمك الموصى به للكتل الخرسانية المستخدمة كحواجز إشعاعية؟",
+        options: ["200 mm", "100 mm", "75 mm", "150 mm"],
+        correct: 3,
+        explanation: "أقل شي لازم يكون سمك بلوك الكونكريت 150 ملم."
+    },
+    {
+        question: "What is the primary purpose of a secondary protective barrier?",
+        translation: "ما هو الغرض الأساسي من الحاجز الوقائي الثانوي؟",
+        options: ["To block primary X-ray beams directly", "To protect against scattered and leakage radiation", "To replace primary barriers entirely", "To increase radiation exposure"],
+        correct: 1,
+        explanation: "وظيفته يحمينا من الإشعاع الثانوي (المشتت والمتسرب) مو من الحزمة المباشرة."
+    },
+    {
+        question: "Secondary protective barriers are typically:",
+        translation: "الحواجز الوقائية الثانوية عادة ما تكون:",
+        options: ["Thicker than primary barriers", "The same thickness as primary barriers", "Made of radioactive materials", "Thinner than primary barriers"],
+        correct: 3,
+        explanation: "تكون أرق من الأساسية لأن الإشعاع الثانوي طاقته وشدته أقل."
+    },
+    {
+        question: "Secondary radiation includes:",
+        translation: "يشمل الإشعاع الثانوي:",
+        options: ["Only direct radiation from the source", "Both scattered radiation and leakage radiation", "Only leakage from equipment", "Primary beam radiation only"],
+        correct: 1,
+        explanation: "مثل ما كلنا قبل شوية، الثانوي هو المشتت والمتسرب سوية."
+    },
+    {
+        question: "Secondary barriers are designed to protect against radiation that:",
+        translation: "تم تصميم الحواجز الثانوية للحماية من الإشعاع الذي:",
+        options: ["Comes directly from the X-ray tube", "Is produced by interaction with walls", "Has been scattered from the patient and objects", "Is generated outside the facility"],
+        correct: 2,
+        explanation: "تحمينا من الإشعاع اللي طفر (تشتت) من المريض أو الأجسام الموجودة."
+    },
+    {
+        question: "Which factor most directly relates to the atomic structure of a material and its ability to block X-rays?",
+        translation: "أي عامل يرتبط بشكل مباشر بالبنية الذرية للمادة وقدرتها على حجب الأشعة السينية؟",
+        options: ["Atomic number", "Exposure time", "Angle of incidence", "Scattering effects"],
+        correct: 0,
+        explanation: "العدد الذري (Z) هو أهم عامل؛ كلما زاد، زادت قدرة المادة على حجب الأشعة."
+    },
+    {
+        question: "What happens when X-rays have higher energy levels?",
+        translation: "ماذا يحدث عندما يكون للأشعة السينية مستويات طاقة أعلى؟",
+        options: ["They require thinner barriers", "They require thicker barriers", "They have longer wavelengths", "They scatter less frequently"],
+        correct: 1,
+        explanation: "كلما زادت الطاقة، زادت قدرة الاختراق، فنحتاج درع أسمك."
+    },
+    {
+        question: "How does material density affect X-ray shielding?",
+        translation: "كيف تؤثر كثافة المادة على التدريع من الأشعة السينية؟",
+        options: ["It has no effect on shielding", "It only matters at specific angles", "Higher density materials block X-rays better", "Lower density materials block X-rays better"],
+        correct: 2,
+        explanation: "المواد الكثيفة (مثل الرصاص) تحجب الأشعة أحسن من المواد الخفيفة."
+    },
+    {
+        question: "Which statement about X-ray exposure time is correct?",
+        translation: "أي عبارة عن وقت التعرض للأشعة السينية صحيحة؟",
+        options: ["Shorter exposure always requires thicker barriers", "Exposure time doesn't affect barrier requirements", "Temperature affects exposure time", "Longer exposure may require thicker barriers"],
+        correct: 3,
+        explanation: "وقت التعرض الطويل يعني جرعة تراكمية أكثر، فممكن نحتاج تدريع أقوى."
+    },
+    {
+        question: "What effect does the angle of X-ray incidence have on penetration?",
+        translation: "ما هو تأثير زاوية سقوط الأشعة السينية على الاختراق؟",
+        options: ["Steep angles always increase penetration", "Angle has no effect on penetration", "Only vertical angles matter", "Shallow angles may increase penetration"],
+        correct: 3,
+        explanation: "الزوايا الضحلة تخلي المسار داخل المادة أطول، فممكن تغير طريقة الاختراق."
+    },
+    {
+        question: "What is the primary purpose of a personnel dosimeter?",
+        translation: "ما هو الغرض الأساسي من مقياس الجرعات الشخصي؟",
+        options: ["To measure radiation exposure over time", "To prevent radiation from entering a facility", "To generate radiation for medical treatments", "To calibrate radiation equipment"],
+        correct: 0,
+        explanation: "حتى نحسب كمية الإشعاع اللي تعرضلها الشخص خلال فترة شغله."
+    },
+    {
+        question: "Which type of dosimeter uses heat stimulation to measure radiation exposure?",
+        translation: "أي نوع من مقاييس الجرعات يستخدم التحفيز الحراري لقياس التعرض للإشعاع؟",
+        options: ["Film badges", "Thermoluminescence Dosimeters (TLDs)", "Pocket Dosimeters", "Radio photoluminescence"],
+        correct: 1,
+        explanation: "الـ TLD يعتمد على الحرارة (Thermo) حتى يطلع الضوء المخزون."
+    },
+    {
+        question: "What advantage does an Optically Stimulated Luminescence (OSL) dosimeter have?",
+        translation: "ما هي الميزة التي يتمتع بها مقياس الجرعات الوميضي المحفز بصرياً (OSL)؟",
+        options: ["It's disposable after one use", "It requires no power source", "It can be read multiple times", "It's the least expensive option"],
+        correct: 2,
+        explanation: "أستاذ قدو، الـ OSL تكدر تقراه أكثر من مرة بدون ما تضيع المعلومات اللي بي."
+    },
+    {
+        question: "Which type of dosimeter provides immediate radiation readings?",
+        translation: "أي نوع من مقاييس الجرعات يوفر قراءات إشعاعية فورية؟",
+        options: ["Radio photoluminescence", "Film badges", "Direct Ion Storage (DIS)", "Pocket Dosimeters"],
+        correct: 3,
+        explanation: "مقياس الجيب ينطيك القراءة كبل بنفس اللحظة."
+    },
+    {
+        question: "What happens to a film badge when exposed to radiation?",
+        translation: "ماذا يحدث لشارة الفيلم عند تعرضها للإشعاع؟",
+        options: ["It changes temperature", "It emits light", "It becomes darker", "It changes color"],
+        correct: 2,
+        explanation: "الفيلم يسود (يصير أغمق) من يحوشه إشعاع ويتحمض."
+    },
+    {
+        question: "What is the primary purpose of a personal dosimetry film badge?",
+        translation: "ما هو الغرض الأساسي من شارة فيلم قياس الجرعات الشخصية؟",
+        options: ["To actively measure radiation in real-time", "To record accumulated radiation exposure over time", "To protect workers from radiation exposure", "To calibrate radiation equipment"],
+        correct: 1,
+        explanation: "يسجل كمية الإشعاع التراكمي اللي حاشت الشخص."
+    },
+    {
+        question: "Which component is essential to the film badge's detection mechanism?",
+        translation: "أي مكون ضروري لآلية الكشف في شارة الفيلم؟",
+        options: ["Digital sensor array", "LED display screen", "Photographic emulsion containing silver compounds", "Radioactive isotope marker"],
+        correct: 2,
+        explanation: "المستحلب اللي بي مركبات الفضة هو اللي يتفاعل ويه الإشعاع."
+    },
+    {
+        question: "How does radiation exposure affect the film in a dosimetry badge?",
+        translation: "كيف يؤثر التعرض للإشعاع على الفيلم في شارة قياس الجرعات؟",
+        options: ["It causes the film to change color", "It creates holes in the film", "It makes the film expand", "It causes the film to darken"],
+        correct: 3,
+        explanation: "يسوي تعتيم بالفيلم، ومن درجة التعتيم نعرف كمية الإشعاع."
+    },
+    {
+        question: "What is the function of metal filters in film badges?",
+        translation: "ما هي وظيفة المرشحات المعدنية في شارات الأفلام؟",
+        options: ["To block all radiation", "To power the device", "To protect the film from light", "To differentiate between radiation types"],
+        correct: 3,
+        explanation: "تساعدنا نميز بين أنواع الأشعة (ألفا، بيتا، جاما) اللي وصلت للفيلم."
+    },
+    {
+        question: "Which characteristic is NOT an advantage of film badge dosimeters?",
+        translation: "أي خاصية مما يلي ليست من مزايا مقاييس الجرعات بشارة الفيلم؟",
+        options: ["Real-time radiation monitoring", "Cost-effectiveness", "Permanent record keeping", "Wide range of radiation detection"],
+        correct: 0,
+        explanation: "باج الفيلم ما ينطي قراءة فورية، لازم يروح للمختبر ويتحمض أول."
+    },
+    {
+        question: "What is the primary purpose of a TLD (Thermoluminescent Dosimeter)?",
+        translation: "ما هو الغرض الأساسي من مقياس الجرعات الوميضي الحراري (TLD)؟",
+        options: ["To measure sound waves", "To detect ionizing radiation exposure", "To monitor temperature changes", "To analyze chemical compositions"],
+        correct: 1,
+        explanation: "كشف التعرض للإشعاع المؤين بجسم الشخص."
+    },
+    {
+        question: "Which of the following is NOT a common material used in TLD elements?",
+        translation: "أي مما يلي ليس مادة شائعة تستخدم في عناصر TLD؟",
+        options: ["Lithium fluoride (LiF)", "Sodium chloride (NaCl)", "Calcium fluoride (CaF2)", "Lithium borate (Li2B4O7)"],
+        correct: 1,
+        explanation: "ملح الطعام (NaCl) مو مادة مستخدمة بالـ TLD."
+    },
+    {
+        question: "What happens when a TLD is exposed to ionizing radiation?",
+        translation: "ماذا يحدث عندما يتعرض TLD للإشعاع المؤين؟",
+        options: ["The material dissolves completely", "The crystal structure breaks down", "Energy becomes trapped in material impurities", "The material changes color permanently"],
+        correct: 2,
+        explanation: "الطاقة تنحبس داخل 'عيوب' أو شوائب الكريستالة."
+    },
+    {
+        question: "During the annealing process, how is the stored energy released?",
+        translation: "خلال عملية التلدين، كيف يتم تحرير الطاقة المخزنة؟",
+        options: ["As sound waves", "As electrical current", "As magnetic waves", "As light"],
+        correct: 3,
+        explanation: "تطلع الطاقة على شكل ضوء لما نسخن المادة."
+    },
+    {
+        question: "What device is used to measure the light emission during TLD reading?",
+        translation: "ما هو الجهاز المستخدم لقياس انبعاث الضوء أثناء قراءة TLD؟",
+        options: ["Geiger counter", "Mass spectrometer", "Photomultiplier tube", "Barometer"],
+        correct: 2,
+        explanation: "أنبوب المضاعف الضوئي هو اللي يحس بهذا الضوء الضعيف ويقيسه."
+    },
+    {
+        question: "What is the primary function of OSL dosimeters?",
+        translation: "ما هي الوظيفة الأساسية لمقاييس الجرعات OSL؟",
+        options: ["To measure temperature changes in radiation environments", "To measure ionizing radiation exposure", "To generate radiation artificially", "To block harmful radiation"],
+        correct: 1,
+        explanation: "قياس التعرض للإشعاع المؤين، تماماً مثل الـ TLD بس بغير تقنية."
+    },
+    {
+        question: "Which material is commonly used in OSL dosimeters?",
+        translation: "ما هي المادة المستخدمة عادة في مقاييس الجرعات OSL؟",
+        options: ["Silicon dioxide", "Carbon fiber", "Beryllium oxide", "Iron oxide"],
+        correct: 2,
+        explanation: "أوكسيد البريليوم أو أوكسيد الألمنيوم هي المواد الشائعة بالـ OSL."
+    },
+    {
+        question: "What type of light is typically used to stimulate the trapped electrons in OSL dosimeters?",
+        translation: "ما هو نوع الضوء المستخدم عادةً لتحفيز الإلكترونات المحاصرة في مقاييس الجرعات OSL؟",
+        options: ["Ultraviolet light", "Red laser light", "Infrared light", "Green laser light"],
+        correct: 3,
+        explanation: "نستخدم الليزر الأخضر حتى نحفز المادة وتطلع طاقتها."
+    },
+    {
+        question: "What color of light is emitted when trapped energy is released in OSL dosimeters?",
+        translation: "ما هو لون الضوء المنبعث عند تحرير الطاقة المحاصرة في مقاييس الجرعات OSL؟",
+        options: ["Green light", "Red light", "Yellow light", "Blue light"],
+        correct: 3,
+        explanation: "الضوء اللي يطلع ونقيسه بالـ OSL يكون لونه أزرق."
+    },
+    {
+        question: "Which of the following is NOT an advantage of OSL dosimeters?",
+        translation: "أي مما يلي ليس من مزايا مقاييس الجرعات OSL؟",
+        options: ["Can be read multiple times", "Requires constant recalibration", "Works with various photon energies", "Resistant to environmental conditions"],
+        correct: 1,
+        explanation: "هي مستقرة فما تحتاج إعادة معايرة 'مستمرة' مثل غيرها."
+    },
+    {
+        question: "What is a key advantage of OSL dosimeters compared to other methods?",
+        translation: "ما هي الميزة الرئيسية لمقاييس الجرعات OSL مقارنة بالطرق الأخرى؟",
+        options: ["They cost less to manufacture", "They can be read multiple times", "They work underwater", "They last indefinitely"],
+        correct: 1,
+        explanation: "هاي أهم ميزة بالـ OSL، تكدر تقراها وتتأكد من النتيجة أكثر من مرة."
+    },
+    {
+        question: "What is the primary purpose of a pocket dosimeter?",
+        translation: "ما هو الغرض الأساسي من مقياس الجرعات الجيبي؟",
+        options: ["To measure air quality in laboratories", "To provide immediate readings of X-ray and gamma ray exposure", "To detect alpha particle radiation only", "To calibrate other radiation detection equipment"],
+        correct: 1,
+        explanation: "توفير قراءة سريعة وفورية للتعرض للأشعة."
+    },
+    {
+        question: "Pocket dosimeters are most accurately described as:",
+        translation: "يتم وصف مقاييس الجرعات الجيبية بدقة أكبر على أنها:",
+        options: ["Digital recording devices", "Complex computer systems", "Small ionization chambers", "Temperature monitoring devices"],
+        correct: 2,
+        explanation: "هي بالأساس غرف تأين صغيرة كلش ومحمولة."
+    },
+    {
+        question: "When are pocket dosimeters most appropriately used?",
+        translation: "متى يكون استخدام مقاييس الجرعات الجيبية أكثر ملاءمة؟",
+        options: ["During low-level radiation work only", "For annual radiation checks", "When collecting soil samples", "When frequent or quick readings are needed"],
+        correct: 3,
+        explanation: "نستخدمها من نكون بمكان بي إشعاع ونريد نعرف شكد تعرضنا 'هسة' وبسرعة."
+    },
+    {
+        question: "Who should use pocket dosimeters?",
+        translation: "من الذي يجب عليه استخدام مقاييس الجرعات الجيبية؟",
+        options: ["Administrative staff only", "Maintenance workers only", "Investigators working with high-level radioactive materials", "Visitors to radiation facilities"],
+        correct: 2,
+        explanation: "المحققين أو العاملين بمناطق بيها إشعاع عالي حتى يحمون نفسهم."
+    },
+    {
+        question: "What type of radiation can pocket dosimeters detect?",
+        translation: "ما هي أنواع الإشعاع التي يمكن لمقاييس الجرعات الجيبية اكتشافها؟",
+        options: ["Alpha and beta radiation only", "Neutron radiation only", "Radio waves and microwaves", "X-rays and gamma rays"],
+        correct: 3,
+        explanation: "مصممة للأشعة الكهرومغناطيسية (إكس وجاما)."
     }
                 ]
             }
